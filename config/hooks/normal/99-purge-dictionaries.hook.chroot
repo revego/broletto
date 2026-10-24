@@ -1,0 +1,4 @@
+#!/bin/sh
+export DEBIAN_FRONTEND=noninteractive
+apt-get purge -y dictionaries-common aspell aspell-en || true
+dpkg --purge --force-all dictionaries-common 2>/dev/null || true

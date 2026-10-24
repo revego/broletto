@@ -12,3 +12,13 @@
 /*/live-image-*.hybrid.iso.zsync
 /*/live-image-*.packages
 
+chroot
+binary
+cache
+.build
+*.iso
+*.zsync
+chroot.*
+live-image-*
+binary.modified_timestamps
+build.log

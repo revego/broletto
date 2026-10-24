@@ -1,0 +1,5 @@
+#!/bin/sh
+export DEBIAN_FRONTEND=noninteractive
+if [ -x /usr/bin/aspell ]; then
+    dpkg --configure dictionaries-common || apt-get install -f -y
+fi
